@@ -115,7 +115,10 @@ function IconCart({
 function Avatar() {
   return (
     <div className="avatar">
-      <img src="/images/image-avatar.png" alt="avatar" />
+      <img
+        src={`${process.env.PUBLIC_URL}/images/image-avatar.png`}
+        alt="avatar"
+      />
     </div>
   );
 }

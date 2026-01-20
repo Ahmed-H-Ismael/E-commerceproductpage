@@ -1,16 +1,16 @@
 import { useState } from "react";
 
 const sneakersthumbnail = [
-  "/images/image-product-1-thumbnail.jpg",
-  "/images/image-product-2-thumbnail.jpg",
-  "/images/image-product-3-thumbnail.jpg",
-  "/images/image-product-4-thumbnail.jpg",
+  `${process.env.PUBLIC_URL}/images/image-product-1-thumbnail.jpg`,
+  `${process.env.PUBLIC_URL}/images/image-product-2-thumbnail.jpg`,
+  `${process.env.PUBLIC_URL}/images/image-product-3-thumbnail.jpg`,
+  `${process.env.PUBLIC_URL}/images/image-product-4-thumbnail.jpg`,
 ];
 const sneakers = [
-  "/images/image-product-1.jpg",
-  "/images/image-product-2.jpg",
-  "/images/image-product-3.jpg",
-  "/images/image-product-4.jpg",
+  `${process.env.PUBLIC_URL}/images/image-product-1.jpg`,
+  `${process.env.PUBLIC_URL}/images/image-product-2.jpg`,
+  `${process.env.PUBLIC_URL}/images/image-product-3.jpg`,
+  `${process.env.PUBLIC_URL}/images/image-product-4.jpg`,
 ];
 export function Product() {
   const [active, setActive] = useState(0);
@@ -104,7 +104,7 @@ function ProductItem({
         {Array.from({ length: 4 }, (_, img) => (
           <img
             key={img}
-            src={`../images/image-product-${img + 1}-thumbnail.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/image-product-${img + 1}-thumbnail.jpg`}
             alt="sneakers"
             className={`img-thumb ${active === img ? "active" : ""}`}
             onClick={(e) => handleProduct(img)}
