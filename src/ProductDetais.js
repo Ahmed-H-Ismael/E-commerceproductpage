@@ -16,7 +16,7 @@ export function ProductDetails({ handleCart, nuItem, setnuItem }) {
       name: "Fall Limited Edition Sneakers",
       price: Number(125),
       numberItem: Number(nuItem),
-      img: "../images/image-product-1-thumbnail.jpg",
+      img: `${process.env.PUBLIC_URL}/images/image-product-1-thumbnail.jpg`,
       total: nuItem * 125,
     };
     handleCart(yourCard);
