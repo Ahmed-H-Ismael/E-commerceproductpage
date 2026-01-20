@@ -115,7 +115,7 @@ function IconCart({
 function Avatar() {
   return (
     <div className="avatar">
-      <img src="../images/image-avatar.png" alt="avatar" />
+      <img src="/images/image-avatar.png" alt="avatar" />
     </div>
   );
 }
